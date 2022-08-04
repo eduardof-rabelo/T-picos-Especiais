@@ -22,10 +22,10 @@ for i in decaimento["Decaimento"]:
     val += i
 tal_chapeu = val/n
 print("Tau (ou tempo de decaimento) e: "+ str(tal_chapeu))
-#C·lculo de tal_chapeu
+#C√°lculo de tal_chapeu
 var_tal_chapeu = (tal_chapeu**2)/n
 print("A variancia de tau_chapeu e: " + str(var_tal_chapeu))
-#C·lculo da variancia
+#C√°lculo da variancia
 
 t = np.linspace(0, 80, 80)
 y = decay(t, 1/tal_chapeu)
@@ -35,5 +35,5 @@ ax2.set_title("Fitting tempo de decaimento")
 ax2.set_xlabel("Tempo de decaimento")
 ax2.set_ylabel("Probabilidade", color='tab:orange')
 ax2.tick_params(axis ='y', labelcolor='tab:orange')
-#Plot do fiiting do gr·fico com 80 pontos em funÁ„o de tal_chapeu
+#Plot do fiiting do gr√°fico com 80 pontos em fun√ß√£o de tal_chapeu
 plt.savefig('Likelihood2.png')
